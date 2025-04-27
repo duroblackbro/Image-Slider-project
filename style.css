@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the slider */
+  .slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: #fff;
+  }
+  
+  /* Image inside the slider */
+  #slider-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Navigation buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  /* Positioning buttons */
+  #prevBtn {
+    left: 10px;
+  }
+  #nextBtn {
+    right: 10px;
+  }
+  
+  /* Hover effect on buttons */
+  .nav-button:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 600px) {
+    .nav-button {
+      font-size: 1.5rem;
+      padding: 8px;
+    }
+  }
+  
